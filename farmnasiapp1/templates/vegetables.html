@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Farmnasi - A Farmer's Guide to Vegetables</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="farming, vegetables, agriculture, pest control" name="keywords">
+    <meta content="A comprehensive guide for farmers on planting, cultivating, and harvesting vegetables while managing pests and diseases." name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'img/seeding.png' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5">
+            <a href="{% url 'my_home' %}" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">Far<span class="text-secondary">mna</span>si</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="{% url 'my_home' %}" class="nav-item nav-link">Home</a>
+                    <a href="{% url 'cereals' %}" class="nav-item nav-link">Cereals</a>
+                    <a href="{% url 'legumes' %}" class="nav-item nav-link">Legumes</a>
+                    <a href="{% url 'beverage' %}" class="nav-item nav-link">Beverages</a>
+                    <a href="{% url 'fruits' %}" class="nav-item nav-link">Fruits</a>
+                    <a href="{% url 'vegetables' %}" class="nav-item nav-link active">Vegetables</a>
+                    <a href="{% url 'contact' %}" class="nav-item nav-link">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header wow fadeIn">
+        <div class="container">
+            <h1 class="display-3 mb-3">A Farmer's Guide to Vegetables</h1>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Guide Section Start -->
+    <div class="container-xxl py-6">
+        <div class="container">
+
+            <!-- Planting Vegetables -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="{% static 'img/planting_veg.jpg' %}" alt="Planting Vegetables" class="img-fluid rounded" style="max-height: 400px; width: auto;">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2>1. Planting Vegetables</h2>
+                    <p>Planting vegetables requires careful selection of varieties suited to your climate and soil conditions. Proper soil preparation is essential, involving tillage and the addition of organic matter. Spacing should be adequate to allow for plant growth and air circulation. Peak seasons usually occur between the month of February through to June</p>
+                </div>
+            </div>
+
+            <!-- Cultivating Vegetables -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6">
+                    <img src="{% static 'img/cultivating_veg.jpg' %}" alt="Cultivating Vegetables" class="img-fluid rounded" style="max-height: 400px; width: auto;">
+                </div>
+                <div class="col-lg-6">
+                    <h2>2. Cultivating Vegetables</h2>
+                    <p>Cultivating vegetables involves maintaining optimal growing conditions through irrigation, pest management, and weed control. Regular monitoring of soil moisture is crucial, along with the application of fertilizers to support growth. Crop rotation and companion planting can improve soil health and reduce pest populations. Mulching can also help regulate soil temperature and suppress weeds.</p>
+                </div>
+            </div>
+
+            <!-- Harvesting Vegetables -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="{% static 'img/harvesting_veg.jpg' %}" alt="Harvesting Vegetables" class="img-fluid rounded" style="max-height: 400px; width: auto;">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2>3. Harvesting Vegetables</h2>
+                    <p>Harvesting vegetables at the right time is essential to maximize flavor and nutritional value. Each type of vegetable has specific signs of ripeness. Depending on the crop, harvesting may involve hand-picking or using tools. Post-harvest handling is key to maintaining quality and includes washing, sorting, and proper storage conditions to prolong freshness.</p>
+                </div>
+            </div>
+
+            <!-- Pests and Diseases -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6">
+                    <img src="{% static 'img/pests_diseases_Vg.jpg' %}" alt="Pests and Diseases of Vegetables" class="img-fluid rounded" style="max-height: 400px; width: auto;">
+                </div>
+                <div class="col-lg-6">
+                    <h2>4. Likely Pests and Diseases</h2>
+                    <p>Vegetable crops face threats from a variety of pests like aphids, caterpillars, and beetles, as well as diseases such as blight and downy mildew. Regular scouting and observation are crucial to catch early signs of infestations. Implementing integrated pest management (IPM) strategies can help maintain healthy crops while minimizing chemical usage.</p>
+                </div>
+            </div>
+
+            <!-- Control Methods -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="{% static 'img/control method.jpg' %}" alt="Control of Pests and Diseases in Vegetables" class="img-fluid rounded" style="max-height: 400px; width: auto;">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2>5. Control of Pests and Diseases</h2>
+                    <p>Managing pests and diseases in vegetable cultivation requires a combination of prevention and intervention strategies. This includes routine monitoring, using resistant varieties, crop rotation, and organic remedies. Employing beneficial insects and using traps can effectively control pest populations without harmful chemicals. Education and training in pest recognition and management are essential for successful vegetable farming.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Guide Section End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

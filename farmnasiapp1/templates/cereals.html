@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Farmnasi - A Farmer's Guide to Cereals</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="farming, cereals, agriculture, pest control" name="keywords">
+    <meta content="A comprehensive guide for farmers on planting, cultivating, and harvesting cereals while managing pests and diseases." name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'img/seeding.png' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5">
+            <a href="{% url 'my_home' %}" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">Far<span class="text-secondary">mna</span>si</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="{% url 'my_home' %}" class="nav-item nav-link">Home</a>
+                    <a href="{% url 'cereals' %}" class="nav-item nav-link active">Cereals</a>
+                    <a href="{% url 'contact' %}" class="nav-item nav-link">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header wow fadeIn">
+        <div class="container">
+            <h1 class="display-3 mb-3">A Farmer's Guide to Cereals</h1>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Guide Section Start -->
+    <div class="container-xxl py-6">
+        <div class="container">
+
+            <!-- Planting Cereals -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="{% static 'img/planting_cereals.jpg' %}" alt="Planting Cereals" class="img-fluid rounded" style="max-height: 400px; width: auto;">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2>1. Planting Cereals</h2>
+                    <p>Planting cereals is a critical stage that demands careful planning and execution. Understanding the selection of the right planting time is crucial; it varies based on regional climatic conditions and specific cereal varieties. For example, warm-season cereals generally thrive when planted after the last frost, while cool-season varieties may be planted earlier. <br> Additionally, it's beneficial to prepare the soil adequately, ensuring it is tilled and complementing it with organic matter to improve fertility. Seed selection should focus on quality, with attention to disease resistance and local adaptability to maximize yield and reduce future problems.</p>
+                </div>
+            </div>
+
+            <!-- Cultivating Cereals -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6">
+                    <img src="{% static 'img/cultivating_cereals.jpg' %}" alt="Cultivating Cereals" class="img-fluid rounded" style="max-height: 400px; width: auto;">
+                </div>
+                <div class="col-lg-6">
+                    <h2>2. Cultivating Cereals</h2>
+                    <p>Cultivation of cereals involves more than just soil preparation; it requires ongoing management and monitoring throughout the growing season. Regularly assessing moisture levels is vital, as cereals need consistent hydration, especially during critical growth periods. Implementing strategies like crop rotation and intercropping can enhance soil health and naturally suppress pests. <br> Effective weed management is also crucial, as weeds compete for resources with crops. Farmers should explore both mechanical and chemical weed control methods, while prioritizing sustainable practices to maintain soil integrity and limit environmental impacts.</p>
+                </div>
+            </div>
+
+            <!-- Harvesting Methods -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="{% static 'img/harvesting_cereals.jpg' %}" alt="Harvesting Cereals" class="img-fluid rounded" style="max-height: 400px; width: auto;">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2>3. Harvesting Methods</h2>
+                    <p>Harvesting cereals is a decisive moment in farming, where careful timing and method can significantly influence the final yield and quality. Farmers can choose between manual and mechanical harvesting, each with its advantages. <br>Manual harvesting, while labor-intensive, enables selective picking and minimizes damage to the grain, which is particularly advantageous for specialty crops. Conversely, mechanical harvesting is efficient for large-scale operations, significantly reducing labor costs and time. <br> However, proper calibration of machinery is crucial to prevent excessive grain loss. Post-harvest handling should also be addressed to ensure the grains are stored properly, preventing spoilage and maintaining market value.</p>
+                </div>
+            </div>
+
+            <!-- Pests and Diseases -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6">
+                    <img src="{% static 'img/pests_diseases.jpg' %}" alt="Pests and Diseases" class="img-fluid rounded" style="max-height: 400px; width: auto;">
+                </div>
+                <div class="col-lg-6">
+                    <h2>4. Likely Pests and Diseases</h2>
+                    <p>Cereals are susceptible to a variety of pests and diseases, which can significantly impair yields if left unmanaged. Common pests include aphids and locusts that feed on the plants, as well as rodents that can disrupt the harvest.<br> Diseases, like rust and blight, can spread quickly through a field, necessitating early detection and intervention. Regular monitoring and scouting are essential for identifying symptoms and implementing controls.<br> Farmers should familiarize themselves with identification guides and stay attuned to local recommendations for pest and disease management.</p>
+                </div>
+            </div>
+
+            <!-- Control Methods -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="{% static 'img/control_pests_diseases.jpg' %}" alt="Control of Pests and Diseases" class="img-fluid rounded" style="max-height: 400px; width: auto;">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2>5. Control of Pests and Diseases</h2>
+                    <p>Effective control methods for managing pests and diseases involve both preventative measures and reactive strategies. Integrated Pest Management (IPM) combines biological control using natural predators with cultural practices such as intercropping and resistant varieties. Chemical pesticides may also be necessary, but their application should be judicious to minimize harm to beneficial insects and potential residue on harvested crops. <br>Education on the safe handling and application of pesticides is vital for protecting the environment and farming community. Continuing research and advocacy for organic and sustainable practices should be encouraged, building resilience against pests and diseases while preserving ecosystem health.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Guide Section End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
