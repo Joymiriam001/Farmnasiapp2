@@ -1,0 +1,319 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Farmnasi - Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Favicon -->
+    <link href="{% static 'img/seeding.png' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/maridadi.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt me-2"></i>HQ, Ruai, Kenya</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>farmnasi@gmail.com</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+               <a class="text-body ms-3" href="https://m.facebook.com/profile.php?id=100090938134161">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-body ms-3" href="https://x.com/KenyaCsaMsp">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="text-body ms-3" href="https://www.linkedin.com/company/kenya-climate-smart-agriculture-multi-stakeholder-platform-kenyacsamsp/">
+                   <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a class="text-body ms-3" href="https://www.instagram.com/kenyacsamsp?igsh=Y2ltMjVldTJ4cWM1">
+                 <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="{% url 'my_home' %}" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">Far<span class="text-secondary">mna</span>si</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="{% url 'my_home' %}" class="nav-item nav-link">Home</a>
+                    <a href="{% url 'seasons' %}" class="nav-item nav-link active">Seasons</a>
+                    <a href="{% url 'product' %}" class="nav-item nav-link">Products</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="{% url 'cereals' %}" class="dropdown-item">Cereals</a>
+                            <a href="{% url 'legumes' %}" class="dropdown-item">Legumes</a>
+                            <a href="{% url 'beverage' %}" class="dropdown-item">Beverage</a>
+                            <a href="{% url 'fruits' %}" class="dropdown-item">Fruits</a>
+                            <a href="{% url 'vegetables' %}" class="dropdown-item">Vegetables</a>
+                        </div>
+                    </div>
+                    <a href="{% url 'contact' %}" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                
+                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
+                        <small class="fa fa-user text-body"></small>
+                    </a>
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5">
+        <div class="container">
+            <h1 class="display-3 mb-3">Products</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Product Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <!-- Products Section -->
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <img src="{% static 'img/ins.jpg' %}" alt="Insecticides" class="img-fluid">
+                        <h5 class="text-center mt-3">Insecticides</h5>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item">
+                        <div class="position-relative bg-light overflow-hidden">
+                            <img src="{% static 'img/foliar.jpg' %}" alt="Foliar Fertilizer" width="300" height="200">
+                            <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5 mb-2" href="">Foliar Fertilizer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item">
+                        <div class="position-relative bg-light overflow-hidden">
+                            <img src="{% static 'img/fungicides.jpg' %}" alt="Fungicides" width="300" height="200">
+                            <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5 mb-2" href="">Fungicides</a>
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="product-item">
+                        <div class="position-relative bg-light overflow-hidden">
+                            <img src="{% static 'img/herbicides.jpg' %}" alt="Herbicides" width="300" height="200">
+                            <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5 mb-2" href="">Herbicides</a>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-item">
+                        <div class="position-relative bg-light overflow-hidden">
+                            <img src="{% static 'img/House.jpg' %}" alt="House Plants" width="300" height="200">
+                            <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5 mb-2" href="">House Plants</a>
+                        </div>
+                      
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item">
+                        <div class="position-relative bg-light overflow-hidden">
+                            <img src="{% static 'img/gear.jpg' %}" alt="Farm Gear" width="300" height="200">
+                            <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5 mb-2" href="">Farm Gear</a>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item">
+                        <div class="position-relative bg-light overflow-hidden">
+                            <img src="{% static 'img/tools.jpg' %}" alt="Farm Tools" width="300" height="200">
+                            <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5 mb-2" href="">Farm Tools</a>
+                        </div>
+                      
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="product-item">
+                        <div class="position-relative bg-light overflow-hidden">
+                            <img src="{% static 'img/seedlings.jpg' %}" alt="Planting Seeds" width="300" height="200">
+                            <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5 mb-2" href="">Planting Seeds</a>
+                        </div>
+                       
+                    </div>
+                </div><!-- Add more products -->
+            </div>
+
+            <!-- County Submission Form Section -->
+<div class="row mt-5">
+    <div class="col-lg-6 mx-auto">
+        <h4 class="text-center mb-4">Submit Your County</h4>
+        <form id="countyForm" method="POST" action="{% url 'submit_county' %}">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="county" class="form-label">Select County</label>
+                <select class="form-select" id="county" name="county" required>
+                    <option value="" disabled selected>Select a county</option>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Mombasa">Mombasa</option>
+                    <option value="Kisumu">Kisumu</option>
+                    <option value="Mombasa">Mombasa</option>
+                                        <option value="Kisumu">Kisumu</option>
+                                        <option value="Nakuru">Nakuru</option>
+                                        <option value="Eldoret">Eldoret</option>
+                                        <option value="Machakos">Machakos</option>
+                                        <option value="Meru">Meru</option>
+                                        <option value="Kiambu">Kiambu</option>
+                                        <option value="Nyeri">Nyeri</option>
+                                        <option value="Kajiado">Kajiado</option>
+                                        <option value="Narok">Narok</option>
+                                        <option value="Nyandarua">Nyandarua</option>
+                                        <option value="Laikipia">Laikipia</option>
+                                        <option value="Bomet">Bomet</option>
+                                        <option value="Kericho">Kericho</option>
+                                        <option value="Uasin Gishu">Uasin Gishu</option>
+                                        <option value="Bungoma">Bungoma</option>
+                                        <option value="Trans Nzoia">Trans Nzoia</option>
+                                        <option value="West Pokot">West Pokot</option>
+                                        <option value="Isiolo">Isiolo</option>
+                                        <option value="Samburu">Samburu</option>
+                                        <option value="Turkana">Turkana</option>
+                                        <option value="Wajir">Wajir</option>
+                                        <option value="Garissa">Garissa</option>
+                                        <option value="Mandera">Mandera</option>
+                                        <option value="Lamu">Lamu</option>
+                                        <option value="Kilifi">Kilifi</option>
+                                        <option value="Makueni">Makueni</option>
+                                        <option value="Embu">Embu</option>
+                                        <option value="Kitui">Kitui</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+        <div id="formFeedback" class="mt-3"></div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('countyForm').addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        const formData = new FormData(this); // Collect form data
+
+        fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            const feedback = document.getElementById('formFeedback');
+            if (data.success) {
+                feedback.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
+                this.reset(); // Clear the form fields
+            } else {
+                feedback.innerHTML = `<div class="alert alert-danger">${data.message}</div>`;
+            }
+        })
+        .catch(error => {
+            const feedback = document.getElementById('formFeedback');
+            feedback.innerHTML = `<div class="alert alert-danger">An error occurred. Please try again.</div>`;
+            console.error('Error:', error);
+        });
+    });
+</script>
+
+            
+        </div>
+    </div>
+    <!-- Product End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; Farmnasi. All Rights Reserved.</p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scripts -->
+       <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/weather.js' %}"></script>
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+
+</html>
